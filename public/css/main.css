@@ -1,0 +1,20 @@
+body {
+    background:  url(https://avatars3.githubusercontent.com/u/8312?s=400&v=4), #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav {
+    display: none;
+}
+
+h2 {
+    left: 0;
+    line-height: 200px;
+    margin-top: 100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
