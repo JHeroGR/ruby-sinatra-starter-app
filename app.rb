@@ -17,5 +17,5 @@ end
 
 # This page gets rendered when the user enters an unidentified route
 not_found do
-    erb :not_found, :layout => :not_found
+    erb :not_found, :layout => :error
 end
