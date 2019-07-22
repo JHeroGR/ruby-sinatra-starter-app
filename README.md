@@ -38,11 +38,11 @@ The `Gemfile` and `Gemfile.lock` which are generated after you run the command `
 
 A `public` folder with a `css` folder including `main.css` and `mobile.css` files to design the app both in desktop and mobile devices. Links are already in the `layout.erb` file. Feel free to change it (See Note section below).
 
-A `config.ru` file for deployment. This is for users who wish to deploy their custom app to a cloud service like Heroku. If you have troubles deploying it to Heroku and encounter this error: "Could not find 'bundler' (version number) required by your /app/Gemfile.lock.". Delete the `Gemfile.lock` file, run `bundle install` in your command line before deployment, and deploy to Heroku. The `config.ru` file also allows you to run the command `rackup` and use the port `9292` for local development.
+A `config.ru` file for deployment. This is for users who wish to deploy their custom app to a cloud service like Heroku. If you have troubles deploying it to Heroku and encounter this error: "Could not find 'bundler' (version number) required by your /app/Gemfile.lock.". Delete the `Gemfile.lock` file, run `bundle install` in your command line before deployment, and deploy to Heroku. The `config.ru` file also allows you to run the command `rackup` and use the port `9292` for local development. (credit goes to [isolatrum](https://www.reddit.com/user/isolatrum/) for the feedback)
 
 ---
 ## Version 1.1.0
-- Users now have the option to either run `ruby <main ruby file>` or run `rackup` in the command line for local development.
+- Users now have the option to either run `ruby <main ruby file>` or run `rackup` in the command line for local development (Thank you [isolatrum](https://www.reddit.com/user/isolatrum/)).
 - Sinatra Hat image added to project (`pulic/img/sinatra-hat.png`).
 - Added `mobile.css` file for web page display in mobile devices (currently supported: `max-width: 320px`).
 - Added `error_layout.erb` for error pages. (Thank you [rockdog](https://github.com/rockdog))
