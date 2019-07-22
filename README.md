@@ -32,7 +32,7 @@ A `views` folder that contains 6 `.erb` files which include HTML that renders in
 - about     -> The About template
 - contact   -> The Contact template
 - not_found -> The Not Found Template, it has its own layout built, feel free to modify it if you like.
-- error_layout -> This special template is used instead of the default template to render the not_found.erb
+- error_layout -> This special template is used instead of the default template to render the not_found.erb (credit goes to [rockdog](https://github.com/rockdog) for the feedback)
 
 The `Gemfile` and `Gemfile.lock` which are generated after you run the command `bundle init`. You will need the Gemfile if you wish to deploy your web application.
 
@@ -45,7 +45,7 @@ A `config.ru` file for deployment. This is for users who wish to deploy their cu
 - Users now have the option to either run `ruby <main ruby file>` or run `rackup` in the command line for local development.
 - Sinatra Hat image added to project (`pulic/img/sinatra-hat.png`).
 - Added `mobile.css` file for web page display in mobile devices (currently supported: `max-width: 320px`).
-- Added `error_layout.erb` for error pages.
+- Added `error_layout.erb` for error pages. (Thank you [rockdog](https://github.com/rockdog))
 
 ---
 # Note
