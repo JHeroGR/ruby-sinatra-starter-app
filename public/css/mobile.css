@@ -1,0 +1,13 @@
+@media (max-width: 320px) {
+    body {
+        background: url(https://avatars3.githubusercontent.com/u/8312?s=400&v=4) #fff;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 75%;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+}
