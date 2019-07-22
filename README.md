@@ -8,7 +8,7 @@ It is also a good learning tool for developers and programmers who want to learn
 ---
 ## Gems Used
 - [Sinatra](https://sinatrarb.com/)
-- [Sintara-Contrib](https://github.com/sinatra/sinatra/tree/master/sinatra-contrib)
+- [Sintara-Contrib](http://sinatrarb.com/contrib/multi_route)
 
 ---
 ## Prerequisites
@@ -23,32 +23,32 @@ Clone the repo, or Download it, place it whereever you like, open any terminal y
 ```bundle install```
 
 ---
-### Included
+## Included
 The `app.rb` is the main ruby file used, this will contain the routes you will be making, go into the directory where the `app.rb` is located and run `ruby <main ruby file>`, in this case `<main ruby file>` is the `app.rb` file, afterwards open your browser with `localhost:port` where `port` is the number that shows in the terminal on startup.
 
----
 A `views` folder that contains 6 `.erb` files which include HTML that renders into the web application.
-- layout.erb    -> The Default template the app will render
-- home.erb      -> The Home template that will render on the layout.erb
-- about.erb     -> The About template
-- contact.erb   -> The Contact template
-- not_found.erb -> The Not Found Template, it has its own layout built, feel free to modify it if you like.
-- error_layout.erb -> This special template is used instead of the default template to handle errors.
+- layout    -> The Default template the app will render
+- home      -> The Home template that will render on the layout.erb
+- about     -> The About template
+- contact   -> The Contact template
+- not_found -> The Not Found Template, it has its own layout built, feel free to modify it if you like.
+- error_layout -> This special template is used instead of the default template to render the not_found.erb
 
----
 The `Gemfile` and `Gemfile.lock` which are generated after you run the command `bundle init`. You will need the Gemfile if you wish to deploy your web application.
 
----
 A `public` folder with a `css` folder including `main.css` and `mobile.css` files to design the app both in desktop and mobile devices. Links are already in the `layout.erb` file. Feel free to change it (See Note section below).
 
----
-### Versioning
-#### Version 1.1.0
-- Sinatra Hat Image added to project (`public/img`).
-- Added `mobile.css` file for web page displaying in mobile devices (currently `max-width: 320px`).
-- Added an `error_layout.erb` file for layout usages.
+A `config.ru` file for deployment. This is for users who wish to deploy their custom app to a cloud service like Heroku. If you have troubles deploying it to Heroku and encounter this error: "Could not find 'bundler' (version number) required by your /app/Gemfile.lock.". Delete the `Gemfile.lock` file, run `bundle install` in your command line before deployment, and deploy to Heroku. The `config.ru` file also allows you to run the command `rackup` and use the port `9292` for local development.
 
+---
+## Version 1.1.0
+- Users now have the option to either run `ruby <main ruby file>` or run `rackup` in the command line for local development.
+- Sinatra Hat image added to project (`pulic/img/sinatra-hat.png`).
+- Added `mobile.css` file for web page display in mobile devices (currently supported: `max-width: 320px`).
+- Added `error_layout.erb` for error pages.
+
+---
 # Note
-You are allowed to fork my template, but not allowed to commit to my changes, you're more than welcome to suggest to me what gems or designs to add to make it more beginner friendly. I will be working on improving this starter app meanwhile, feel free to download it and mess with it, for now, it is my first release. If you decide to use this template for your project, credit is given where credit is due. Feedback is appreciated.
+You are allowed to fork my template, but not allowed to commit to my changes, you're more than welcome to suggest to me what gems or designs to add to make it more beginner friendly. I will be working on improving this starter app meanwhile, feel free to download it and mess with it, for now, it is my first release. If you decide to use this template for your project, do please tag me in your project. Feedback is appreciated.
 
 #### Copyright JHero Studios
