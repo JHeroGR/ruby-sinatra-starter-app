@@ -3,6 +3,7 @@ require 'sinatra/reloader' if development? # Learn more about the reloader at si
 require 'sinatra/multi_route'
 
 # Uncomment the line's =begin and =end to use this example route
+=begin
 get '/example' do
   "This is an example
   <form action='/example' method='post'>
@@ -15,6 +16,7 @@ post '/example' do
   "<h1>POSTED</h1>
   <a href='/'>Click to go back home</a>"
 end
+=end
 
 # Learn more about multi-routing at sinatrarb.com
 get '/', '/home' do
